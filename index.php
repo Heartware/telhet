@@ -3,8 +3,8 @@ include 'db_recs.php';
 CRYPT_BLOWFISH;
 
 $message = '';
-$username = '';
-$password = '';
+$username = 'pjtw.hartman@gmail.com';
+$password = 'Pollie55!';
 
 if (isset($_POST['btnlogin'])):
     if (isset($_SESSION['teller'])){unset($_SESSION['teller']);}
@@ -17,7 +17,7 @@ if (isset($_POST['btnlogin'])):
     if (($_SESSION['persoon']->id > 0) 
             && (validatePassword($_SESSION['persoon']->ww, $password . $username_up, FALSE))) {
         $_SESSION['username'] = $username_up;
-        header('location:' . '/Teller/menu.php');
+        header('location:' . '/Telhet/menu.php');
         die();
     } else {
         $message = " Login failed ";
