@@ -1,2 +1,2 @@
-# burrp
-Voor de barapp
+# Telhet
+Voor de tellerblokjes
